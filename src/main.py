@@ -37,6 +37,10 @@ def run_commands(connection: Connection):
         result = connection.run(command, hide=show_command)
         print(result.stdout)
 
+        # with connection.cd('..'):
+        #     result = connection.run('ls')
+        #     print(result.stdout)
+
 
 def main():
     """ Logic to create SSH connections to hosts & issue bash commands """
